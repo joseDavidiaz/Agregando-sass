@@ -147,7 +147,7 @@ article p {
 }
 
 .card2 {
-  width: 250px;
+  width: 350px;
   height: 500;
   background-color: #75967a;
   border-radius: 15px;
@@ -288,7 +288,7 @@ article p {
 .imgPodcast {
   width: 400px;
   height: 200px;
-  background-color: #c2c2c2;
+  background-color: #75967a;
   border-radius: 15px;
   display: flex;
   flex-direction: column;

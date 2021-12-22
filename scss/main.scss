@@ -1,10 +1,24 @@
 @import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300&display=swap');
 @import "tipografia";
-$color-fondo:#a58d82;
-$colorbis:#75967a;
 
+$paleta: (
+    color-fondo:#a58d82,
+    colorbis:#75967a
+);
+
+@mixin card() {
+    width: 350px;
+    height: 500;
+    background-color: map-get($paleta, colorbis );
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 2rem;
+}
 .colorHeader{
-    background-color: $colorbis;
+    background-color: map-get($paleta, colorbis );
 }
 
 *{
@@ -14,7 +28,7 @@ $colorbis:#75967a;
 }
 
 body {
-    background-color: $color-fondo;
+    background-color: map-get($paleta, color-fondo );
     font-family: "poppins",sans-serif;
 }
 
@@ -24,7 +38,7 @@ body {
     align-items: center;
     padding: 1rem 0;
     border-bottom: 2px solid black;
-    background-color: $colorbis;
+    background-color: map-get($paleta, colorbis );
 }
 
 .logo{
@@ -104,15 +118,7 @@ article p{
     transition-timing-function: linear;
 }
 .card{
-    width: 350px;
-    height: 500;
-    background-color: $colorbis;
-    border-radius: 15px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
-    padding: 15px 2rem;
+    @include card();
 }
 /* Seccion 3 Inicio */
 .seccionTemas{
@@ -138,15 +144,7 @@ article p{
     justify-content: space-around;
 }
     .card2{
-        width: 250px;
-        height: 500;
-        background-color: $colorbis;
-        border-radius: 15px;
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-        align-items: center;
-        padding: 15px 2rem;
+        @include card();
 
             &:hover{
                     width: 300px;
@@ -205,7 +203,7 @@ article p{
     .card3{
         width: 200px;
         height: 250px;
-        background-color: $colorbis;
+        background-color: map-get($paleta, colorbis );
         border-radius: 15px;
         display: flex;
         flex-direction: column;
@@ -214,7 +212,7 @@ article p{
         padding: 15px 2rem;
     }
     .imgProductos{
-        background-color: $colorbis;
+        background-color: map-get($paleta, colorbis );
         border-radius: 15px;
         display: flex;
         flex-direction: column;
@@ -277,7 +275,7 @@ article p{
 .imgPodcast{
     width: 400px;
     height: 200px;
-    background-color: rgb(194, 194, 194);
+    background-color: map-get($paleta, colorbis );
     border-radius: 15px;
     display: flex;
     flex-direction: column;
@@ -357,7 +355,7 @@ footer{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: $colorbis;
+    background-color: map-get($paleta, colorbis );
     }
 
     
