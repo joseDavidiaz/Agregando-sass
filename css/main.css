@@ -1,6 +1,34 @@
 @import url("https://fonts.googleapis.com/css2?family=Rubik:wght@300&display=swap");
+.letras {
+  color: black;
+}
+
+.colorboton {
+  background-color: #e7b99f;
+  border-color: #f3e1d7;
+}
+.colorboton:hover {
+  background-color: #966c60;
+  border-color: #f3e1d7;
+}
+
+.colorboton2 {
+  background-color: #d1b49f;
+  border-color: #f3e1d7;
+}
+.colorboton2:hover {
+  background-color: #e7b99f;
+  border-color: #f3e1d7;
+}
+
 .colorHeader {
-  background-color: #75967a;
+  background-color: #d1b49f;
+  border-radius: 1 rem;
+}
+
+.titulonav {
+  padding: 0;
+  margin: 0;
 }
 
 * {
@@ -10,7 +38,7 @@
 }
 
 body {
-  background-color: #a58d82;
+  background-color: #f3e1d7;
   font-family: "poppins", sans-serif;
 }
 
@@ -20,7 +48,7 @@ body {
   align-items: center;
   padding: 1rem 0;
   border-bottom: 2px solid black;
-  background-color: #75967a;
+  background-color: #d1b49f;
 }
 
 .logo {
@@ -110,13 +138,14 @@ article p {
 .card {
   width: 350px;
   height: 500;
-  background-color: #75967a;
+  background-color: #d1b49f;
   border-radius: 15px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
   padding: 15px 2rem;
+  margin: 2rem auto;
 }
 
 /* Seccion 3 Inicio */
@@ -149,13 +178,14 @@ article p {
 .card2 {
   width: 350px;
   height: 500;
-  background-color: #75967a;
+  background-color: #d1b49f;
   border-radius: 15px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
   padding: 15px 2rem;
+  margin: 2rem auto;
 }
 .card2:hover {
   width: 300px;
@@ -213,7 +243,7 @@ article p {
 .card3 {
   width: 200px;
   height: 250px;
-  background-color: #75967a;
+  background-color: #d1b49f;
   border-radius: 15px;
   display: flex;
   flex-direction: column;
@@ -221,9 +251,13 @@ article p {
   align-items: center;
   padding: 15px 2rem;
 }
+.card3:hover {
+  background-color: #e7b99f;
+  border-color: #f3e1d7;
+}
 
 .imgProductos {
-  background-color: #75967a;
+  background-color: #d1b49f;
   border-radius: 15px;
   display: flex;
   flex-direction: column;
@@ -235,31 +269,16 @@ article p {
   transition-timing-function: linear;
 }
 
-.card3:hover {
-  width: 250px;
-  height: 300px;
-}
-
 /* Nosotros Pagina*/
 .sectionNosotros {
-  margin-top: 2rem;
-}
-
-.divNosotros1 {
-  margin-top: 25px;
-  height: 100%;
-  width: 100%;
-  display: flex;
-  justify-content: space-around;
+  margin: 2rem auto;
+  margin-block-end: 4rem;
 }
 
 .textoNosotros {
-  margin-top: 19rem;
-  width: 450px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  font-size: 18px;
+  width: 90%;
+  font-size: 20px;
+  margin: 2rem auto;
 }
 
 .divNosotros2 {
@@ -271,9 +290,10 @@ article p {
 }
 
 .imgNosotros {
-  width: 85%;
+  width: 100%;
   height: 100%;
   border-radius: 15px;
+  margin: 2rem auto;
 }
 
 /* Pagina Podcast */
@@ -288,7 +308,7 @@ article p {
 .imgPodcast {
   width: 400px;
   height: 200px;
-  background-color: #75967a;
+  background-color: #d1b49f;
   border-radius: 15px;
   display: flex;
   flex-direction: column;
@@ -300,6 +320,7 @@ article p {
   display: flex;
   justify-content: center;
   align-items: center;
+  margin: 2rem auto;
 }
 
 .divPodcast {
@@ -358,13 +379,19 @@ footer img {
   width: 40px;
 }
 
+footer p {
+  width: 90%;
+  font-size: 20px;
+}
+
 footer {
   /* margin-top: 100px; */
   padding: 1rem;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: #75967a;
+  margin: auto;
+  background-color: #d1b49f;
 }
 
 /*# sourceMappingURL=main.css.map */

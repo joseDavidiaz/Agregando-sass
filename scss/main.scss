@@ -2,8 +2,11 @@
 @import "tipografia";
 
 $paleta: (
-    color-fondo:#a58d82,
-    colorbis:#75967a
+    color-fondo: #f3e1d7,
+    colorbis: #d1b49f,
+    color3:  #e7b99f,
+    color4: #966c60
+
 );
 
 @mixin card() {
@@ -16,9 +19,40 @@ $paleta: (
     justify-content: space-between;
     align-items: center;
     padding: 15px 2rem;
+    margin: 2rem auto;
 }
+
+.letras{
+    color: black;
+}
+
+.colorboton{
+    background-color: map-get($map:$paleta, $key:color3 ) ;
+    border-color: map-get($map:$paleta, $key:color-fondo ) ;
+        &:hover{
+            background-color: map-get($map:$paleta, $key:color4 ) ;
+            border-color: map-get($map:$paleta, $key:color-fondo ) ;
+            }
+}
+
+.colorboton2{
+    background-color: map-get($map:$paleta, $key:colorbis ) ;
+    border-color: map-get($map:$paleta, $key:color-fondo ) ;
+        &:hover{
+            background-color: map-get($map:$paleta, $key:color3 ) ;
+            border-color: map-get($map:$paleta, $key:color-fondo ) ;
+    }
+}
+
 .colorHeader{
     background-color: map-get($paleta, colorbis );
+    border-radius: 1 rem;
+}
+
+.titulonav{
+    padding: 0;
+    margin: 0;
+    
 }
 
 *{
@@ -210,6 +244,10 @@ article p{
         justify-content: space-between;
         align-items: center;
         padding: 15px 2rem;
+            &:hover{
+                background-color: map-get($map:$paleta, $key:color3 ) ;
+                border-color: map-get($map:$paleta, $key:color-fondo ) ;
+        }
     }
     .imgProductos{
         background-color: map-get($paleta, colorbis );
@@ -224,30 +262,30 @@ article p{
         transition-timing-function: linear;
     }
 
-    .card3:hover{
-        width: 250px;
-        height: 300px;
-    }
+    // .card3:hover{
+    //     width: 250px;
+    //     height: 300px;
+    // }
 
     /* Nosotros Pagina*/ 
     .sectionNosotros{
-        margin-top: 2rem;
+        margin:2rem auto;
+        margin-block-end: 4rem;
     }   
 
-        .divNosotros1{
-        margin-top: 25px;
-        height: 100%;
-        width: 100%;
-        display: flex;
-        justify-content: space-around;    
-        }
+        // .divNosotros1{
+        // margin-top: 25px;
+        // height: 100%;
+        // width: 100%;
+        // display: flex;  
+        // margin:2rem auto; 
+        // }
+
         .textoNosotros{
-        margin-top: 19rem;
-        width: 450px;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        font-size: 18px;
+        width: 90%;
+        font-size: 20px;
+        margin:2rem auto ;
+        
         }
         .divNosotros2{
         margin-top: 25px;
@@ -257,9 +295,10 @@ article p{
         justify-content: space-around;
         }
         .imgNosotros{
-        width: 85%;
+        width: 100%;
         height: 100%;
         border-radius: 15px;
+        margin:2rem auto; 
         }
 
     /* Pagina Podcast */
@@ -287,6 +326,7 @@ article p{
     display: flex;
     justify-content: center;
     align-items: center;
+    margin:2rem auto ;
 }
 
 .divPodcast{
@@ -349,12 +389,18 @@ footer img{
     width: 40px;
 }
 
+footer p{
+    width: 90%;
+    font-size: 20px;
+}
+
 footer{
     /* margin-top: 100px; */
     padding: 1rem;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    margin:auto ;
     background-color: map-get($paleta, colorbis );
     }
 
