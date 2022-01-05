@@ -1,6 +1,57 @@
 @import url("https://fonts.googleapis.com/css2?family=Rubik:wght@300&display=swap");
+.transparente {
+  background-color: transparent;
+}
+
+.tex1 {
+  position: relative;
+  color: white;
+  text-decoration: none;
+  font-size: 50px;
+}
+
+.tex1::before {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 100%;
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: #000;
+  transform: scaleX(0);
+  transform-origin: top left;
+  transition: transform 0.3s ease;
+}
+
+.body {
+  margin: 0;
+  min-height: 100vh;
+  background-image: url(../img/1019.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.body:before {
+  content: "";
+  width: 100%;
+  height: 100%;
+  min-height: 100vh;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: linear-gradient(90deg, #f3e1d7, #ad5435);
+  opacity: 0.35;
+  z-index: -1;
+}
+
 .letras {
   color: black;
+}
+
+.letras1 {
+  color: white;
 }
 
 .colorboton {
@@ -40,6 +91,30 @@
 body {
   background-color: #f3e1d7;
   font-family: "poppins", sans-serif;
+}
+
+.header1 {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 1rem 0;
+  border-bottom: 2px solid black;
+}
+
+.parrafo {
+  color: white;
+  justify-content: space-around;
+  align-items: center;
+  font-size: 30px;
+  text-decoration: none;
+  background-image: linear-gradient(currentColor, currentColor);
+  background-position: 0% 100%;
+  background-repeat: no-repeat;
+  background-size: 0% 2px;
+  transition: background-size 0.3s;
+}
+.parrafo:hover, .parrafo li:focus {
+  background-size: 100% 2px;
 }
 
 .header {
